@@ -1,5 +1,3 @@
-import me.padamchopra.android.ProjectConfig
-
 plugins {
     id("android.application")
 }
@@ -20,16 +18,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-    buildFeatures {
-        compose = true
     }
 }
 
@@ -52,4 +40,7 @@ dependencies {
 
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+
+    implementation(project(":design"))
+    implementation(project(":composables"))
 }

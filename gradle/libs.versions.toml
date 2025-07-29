@@ -14,6 +14,7 @@ gradlePlugin = "8.11.1"
 timber = "5.0.1"
 lifecycle = "2.9.2"
 desugarJdkLibs = "2.1.5"
+collectionsImmutable = "0.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,7 @@ android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref 
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 desugarJdkLibs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugarJdkLibs" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "collectionsImmutable" }
 lifecycle-runtime-compose-android = { module = "androidx.lifecycle:lifecycle-runtime-compose-android", version.ref = "lifecycle" }
 
 [plugins]
@@ -53,5 +55,7 @@ compose = [
     "compose-tooling-preview",
     "compose-ui",
     "compose-foundation",
-    "lifecycle-runtime-compose-android"
+    "lifecycle-runtime-compose-android",
+    "androidx-material3",
+    "collections-immutable"
 ]

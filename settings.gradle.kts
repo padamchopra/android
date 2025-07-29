@@ -23,4 +23,5 @@ dependencyResolutionManagement {
 rootProject.name = "Android"
 include(":app")
 include(":nav")
+include(":design")
 include(":composables")
