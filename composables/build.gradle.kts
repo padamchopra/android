@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "me.padamchopra.android.composables"
 }
+
+dependencies {
+    implementation(project(":design"))
+}

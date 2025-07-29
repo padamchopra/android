@@ -101,6 +101,12 @@ private val LightColorScheme = ColorScheme(
     surfaceDim = Color(0xFFE0E0E0),
 )
 
+object AppTheme {
+    val sizes: AppSizes
+        @Composable
+        get() = LocalAppSizes.current
+}
+
 @Composable
 fun AppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

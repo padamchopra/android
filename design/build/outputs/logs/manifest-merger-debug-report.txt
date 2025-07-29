@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml:2:13-83
-INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml:2:13-83
+ADDED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml:2:13-83
+INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml:2:13-83
 	package
-		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml
+		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml
 	xmlns:android
-		ADDED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml:2:23-81
+		ADDED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml:2:23-81
 uses-sdk
-INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml reason: use-sdk injection requested
-INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml
-INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml
+INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml reason: use-sdk injection requested
+INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml
+INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml
 	android:targetSdkVersion
-		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml
+		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml
 	android:minSdkVersion
-		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest132501557799771710.xml
+		INJECTED from /Users/padamchopra/Documents/Projects/Android/design/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5433394582260981154.xml
