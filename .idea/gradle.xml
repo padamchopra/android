@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/build-rules" />
             <option value="$PROJECT_DIR$/build-rules/conventions" />
             <option value="$PROJECT_DIR$/composables" />
+            <option value="$PROJECT_DIR$/design" />
             <option value="$PROJECT_DIR$/nav" />
           </set>
         </option>

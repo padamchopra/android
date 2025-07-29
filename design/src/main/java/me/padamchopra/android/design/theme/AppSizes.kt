@@ -18,6 +18,7 @@ data class AppSizes(
 
     val divider: Dp = 1.dp,
 
+    val padding2: Dp = 2.dp,
     val padding4: Dp = 4.dp,
     val padding8: Dp = 8.dp,
     val padding12: Dp = 12.dp,

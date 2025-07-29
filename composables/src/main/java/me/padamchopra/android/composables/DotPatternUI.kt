@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -132,16 +133,16 @@ fun Preview_DotPatternUI() {
                     .navigationBarsPadding()
                     .clip(MaterialTheme.shapes.medium)
                     .background(MaterialTheme.colorScheme.surfaceContainerLow)
-                    .padding(12.dp)
+                    .padding(AppTheme.sizes.padding16)
                     .verticalScroll(rememberScrollState()),
-                verticalArrangement = Arrangement.spacedBy(AppTheme.sizes.padding16)
+                verticalArrangement = Arrangement.spacedBy(AppTheme.sizes.padding24)
             ) {
-                SliderRow("Opacity", colorOpacity, 0.1f, 1f) { colorOpacity = it }
-                SliderRow("Shimmer", shimmerSpeed.toFloat(), 0.5f, 5f) { shimmerSpeed = it.toDouble() }
-                SliderRow("dxFactor", dxFactor.toFloat(), 0.1f, 1f) { dxFactor = it.toDouble() }
-                SliderRow("dyFactor", dyFactor.toFloat(), 0.1f, 1f) { dyFactor = it.toDouble() }
-                SliderRow("BaseAlpha", baseAlpha.toFloat(), 0f, 1f) { baseAlpha = it.toDouble() }
-                SliderRow("AlphaMult", alphaMultiplier.toFloat(), 0f, 10f) { alphaMultiplier = it.toDouble() }
+                SliderRow(colorOpacity, 0.1f, 1f) { colorOpacity = it }
+                SliderRow(shimmerSpeed.toFloat(), 0.5f, 5f) { shimmerSpeed = it.toDouble() }
+                SliderRow(dxFactor.toFloat(), 0.1f, 1f) { dxFactor = it.toDouble() }
+                SliderRow(dyFactor.toFloat(), 0.1f, 1f) { dyFactor = it.toDouble() }
+                SliderRow(baseAlpha.toFloat(), 0f, 1f) { baseAlpha = it.toDouble() }
+                SliderRow(alphaMultiplier.toFloat(), 0f, 10f) { alphaMultiplier = it.toDouble() }
             }
         }
     }
@@ -149,7 +150,6 @@ fun Preview_DotPatternUI() {
 
 @Composable
 private fun SliderRow(
-    label: String,
     value: Float,
     min: Float,
     max: Float,
@@ -159,18 +159,21 @@ private fun SliderRow(
     val activeTrack = MaterialTheme.colorScheme.primary
     val inactiveTrack = MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)
 
-    Column(
-        modifier = Modifier.fillMaxWidth()
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(AppTheme.sizes.padding8)
     ) {
         Text(
-            text = "$label: ${"%.2f".format(value)}",
+            text = "%.2f".format(value),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurface
         )
+
         Slider(
             modifier = Modifier
-                .fillMaxWidth()
-                .height(24.dp),
+                .weight(1f)
+                .height(8.dp),
             value = value,
             onValueChange = onValueChange,
             valueRange = min..max,
@@ -179,6 +182,12 @@ private fun SliderRow(
                 activeTrackColor = activeTrack,
                 inactiveTrackColor = inactiveTrack
             )
+        )
+
+        Text(
+            text = "%.2f".format(value),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurface
         )
     }
 }
